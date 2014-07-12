@@ -1,0 +1,9 @@
+{
+    "name": "duodraco/curso",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Curso\\":"application/source/Curso/"
+        }
+    }
+}
