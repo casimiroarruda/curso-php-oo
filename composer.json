@@ -1,6 +1,9 @@
 {
     "name": "duodraco/curso",
-    "require": {},
+    "require": {
+        "drakojn/io":"0.1.1",
+        "respect/rest":"*"
+    },
     "autoload":{
         "psr-4":{
             "Curso\\":"application/source/Curso/"
