@@ -1,4 +1,6 @@
 <?php
+use Curso\Models\Phone\Land;
+use Curso\Models\Phone\Mobile;
 $printer = new \Curso\Service\Printer;
 
 $contato = Curso\Models\Factory\Contato::buildContact(
@@ -11,3 +13,8 @@ $contato = Curso\Models\Factory\Contato::buildContact(
 );
 
 $printer->putOnTheScreen($contato);
+$celular = new Mobile;
+$celular->setCityCode(11);
+$celular->setCountryCode(55);
+$celular->setNumber(87654321);
+echo $celular->getCountryCode();

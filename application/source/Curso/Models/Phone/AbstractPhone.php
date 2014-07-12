@@ -1,6 +1,8 @@
 <?php
 namespace Curso\Models\Phone;
 
+use Curso\Service\Registry;
+
 abstract class AbstractPhone
 {
     protected $id;
@@ -39,9 +41,9 @@ abstract class AbstractPhone
     /**
      * @return mixed
      */
-    public function getCountryCode()
+    public final function getCountryCode()
     {
-        return $this->countryCode;
+        return '+'.Registry::get('countryCode');
     }
 
     /**
